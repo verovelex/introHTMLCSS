@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Här ställs visninsporten så att webbplatsen ser bra ut på alla enheter -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Länk till CSS filen -->
+        <link href="test.css" rel="stylesheet" type="text/css">
+        <title>Inlämningsuppgift 6</title>
+    </head>
+    <body>
+        <!-- behållare med klassen "container" för att hålla de två kolumnerna -->
+        <div class="container">
+            <!-- Vänsterkolumnen med navigationsmenyn-->
+            <div id="left_column">
+                <img src="Bilder/db_title.jpeg" alt="dragonball title">
+                <h1>Meny</h1>
+                <nav id="navigation">
+                    <ul>
+                        <li><a href="#">Länk 1</a></li>
+                        <li><a href="#">Länk 2</a></li>
+                        <li><a href="#">Länk 3</a></li>
+                        <li><a href="#">Länk 4</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--Huvudkolumnen med rubrik + 3 bilder med text + avsnitt med text och bild + sidfot-->
+            <div id="main_column">
+                <header>
+                    <h1>Innehåll</h1>
+                </header>
+                <!--div för att strukturera innehållet i huvudkolumnen-->
+                <div id="img_section">
+                    <!--bilder med tillhörande text-->
+                    <div class="img_container">
+                        <img src="Bilder/bbykaka.jpeg" alt="Bild 1 om dragonball">
+                        <div class="img_text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
+                            nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. 
+                            Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. 
+                        </div>
+                    </div>
+                    <div class="img_container">
+                        <img src="Bilder/fusion.jpeg" alt="Bild 2 om dragonball">
+                        <div class="img_text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
+                            nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. 
+                            Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. 
+                        </div>
+                    </div>
+                    <div class="img_container">
+                        <img src="Bilder/tb.jpeg" alt="Bild 3 om dragonball">
+                        <div class="img_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
+                            nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. 
+                            Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. 
+                        </div>
+                    </div>
+                </div>
+                <!--Div som innehåller både text och bild-->
+                <div id="img_txt_section">
+                    <div id="txt_content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
+                        nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. 
+                        Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. 
+                        Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis 
+                        urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...<br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, 
+                        nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. 
+                        Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. 
+                        Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis 
+                        urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac...
+                    </div>
+                    <div id="img_content">
+                        <img src="Bilder/dbz4.jpeg" alt="Bild 4 om dragonball">
+                    </div>
+                </div>
+                <footer>
+                    Skriven i HTML 5
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

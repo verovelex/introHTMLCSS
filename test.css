@@ -1,0 +1,130 @@
+.container{
+    display: flex; /*tillämpas på behållaren för att skapa en flexbox-layout*/
+}
+
+#left_column{
+    flex:0 0 25%; /*Fast bredd på 25% av behållarens bredd*/
+    background-color: rgb(230, 178, 113);
+    text-align: center;
+}
+#left_column img{
+    margin-top: 10px;
+    width:90%;
+}
+#left_column h1{
+    font-size: 40px;
+    color: rgb(233, 128, 0)
+}
+#navigation ul{
+    list-style: none;
+    padding: 0;
+} 
+#navigation li{
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+}
+#navigation a{
+    text-decoration: none;
+    font-size: large;
+    color: rgb(150, 148, 148);
+}
+#navigation a:hover {
+    color: black;
+    font-size: larger;
+}
+
+#main_column{
+    flex:1; /*Tar upp resterande utrymme i behållaren efter vänsterkolumnen*/
+    margin-left: 10px;
+    text-align: center;
+}
+header h1{
+    text-align: left;
+    font-size: 45px;
+}
+#img_section {
+    display: flex; /*används för att centrera bilderna och texten horisontellt*/
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /*lägger till ett mellanrum på 20 pixlar mellan varje kolumn*/
+    border-bottom: 1px solid black;
+}
+.img_container {
+    display: flex;
+    flex-direction: column; /*bilderna och text blir i kolumner*/
+    margin-left: 20px;
+}
+.img_container img{
+    width: 100%;
+    border-radius: 20px;
+}
+.img_text {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#img_txt_section {
+    display: flex;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+} 
+#txt_content {
+    flex: 0 0 65%; 
+    text-align: left;
+}
+#img_content {
+    flex: 1;
+    text-align: right;
+    padding-right: 10px;
+}
+#img_content img{
+    width: 100%;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+footer{
+    padding: 15px;
+    font-style: italic;
+    background-color:rgb(230, 178, 113);
+}
+  
+
+/* Media query för mobil-visning */
+@media (max-width: 600px) {
+    .container {
+      flex-direction: column; /*vertikal kolumnlayout för att placera bild och text ovanpå varandra*/
+    }
+  
+    #left_column img{
+      display: none;
+    }
+  
+    #main_column {
+      padding-right: 20px;
+    }
+
+    header h1{
+        text-align: center;
+    }
+
+    #img_section{
+        flex-wrap: wrap; /*elementen bryts till en ny rad när de inte får plats på samma rad*/
+        width: 100%;
+    }
+
+    #img_txt_section{
+        flex-direction: column;
+    }
+    #txt_content{
+        margin-top: 10px;
+    }
+    #img_content{
+        padding-right: 10px;
+        order:-1; /*ändrar den visuella ordningen och placerar bilden först i elementet*/
+    }
+}
